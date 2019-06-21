@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: cursive;
+  background-color: lightblue;
+}
+
+.content{
+  height: 600px;
+  background-color: green;
+}
+
+.about{
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 100px 0;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+}
+
+.about h1{
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.about h1, p {
+  transition: all 0.8ms ease;
+}
+
+.about.hidden h1{
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateY(-40deg);
+}
+.about.hidden p{
+  opacity: 0;
+  transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
