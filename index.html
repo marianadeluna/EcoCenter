@@ -5,7 +5,6 @@
     <meta name="description" content="A webiste that compares and ranks different types of eco-friendly products on the market. Research and buy at the EcoCenter.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styleIndex.css">
-    <link rel="stylesheet" type="text/javascript" href="index.js">
 
     <title>EcoCenter Introduction</title>
   </head>
@@ -37,6 +36,24 @@
         <p>Center for all top eco-friendly products. </p>
       </center>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type= "text/javascript">
+      (function() {
+        var aboutEL = $('div.about'),
+            //this will tell the program when the animation is triggered.
+            //in this case, the content height / 2
+            aboutELOffset = aboutEL.offset().top/2,
+
+            documentEL = $(document);
+
+        documentEL.on('scroll', function() {
+          if(documentEL.scrollTop() > aboutELOffset && aboutEL.hasClass('hidden')) aboutEL.removeClass('hidden');
+        });
+
+
+      })();
+    </script>
 
     link to website<br>
     <a href="http://wwww.ecocenter.com"> ecocenter.com</a><br>
