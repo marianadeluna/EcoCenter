@@ -5,12 +5,17 @@
 
 body {
   font-family: cursive;
-  background-color: lightblue;
+  background-color: #96ff96;
+}
+
+h1{
+  font-family: cursive;
+  font-size: 50px;
 }
 
 .content{
   height: 600px;
-  background-color: green;
+  background-color: #96ff96;
 }
 
 .about{
@@ -37,4 +42,28 @@ body {
 .about.hidden p{
   opacity: 0;
   transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #96ff96;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #96ff96;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
 }
