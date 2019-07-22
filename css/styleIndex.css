@@ -5,7 +5,6 @@
 
 body {
   font-family: cursive;
-  background-color: #96ff96;
 }
 
 h1{
@@ -14,7 +13,6 @@ h1{
 }
 
 .content{
-  height: 600px;
   background-color: #96ff96;
 }
 
@@ -44,16 +42,14 @@ h1{
   transform: translate3d(0, 0, 400px) rotateY(40deg);
 }
 
-/* Style the tab */
+/* Style the top tabs */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #96ff96;
 }
 
-/* Style the buttons inside the tab */
+/* Style the tab buttons tab */
 .tab button {
-  background-color: #96ff96;
+  background-color: #4B8B3B;
   float: center;
   border: none;
   outline: none;
@@ -66,4 +62,37 @@ h1{
 /* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #ddd;
+}
+
+/* Styling the carousel */
+.carousel {
+  position:relative;
+  height:400px;
+  weight:80%;
+  margin:0 auto;
+}
+
+.carousel-image {
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.carousel-track-container {
+  background-color: #4B8B3B;
+  height:100%;  /* height of .carousel */
+  position: relative;
+}
+
+.carousel-track {
+  padding:0;
+  margin:0;
+  list-style: none;
+}
+
+.carousel-slide {
+  position: absolute;
+  top:0;
+  bottom:0;
+  width:100%;
 }

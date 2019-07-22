@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="description" content="A webiste that compares and ranks different types of eco-friendly products on the market. Research and buy at the EcoCenter.">
+    <meta name="description" content="A webiste that compares different types of eco-friendly products on the market. Research and buy at the EcoCenter.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="styleIndex.css">
+    <link rel="stylesheet" type="text/css" href="css/styleIndex.css">
 
     <title>EcoCenter Introduction</title>
   </head>
@@ -29,11 +29,41 @@
     }
     </script>
 
-    <div class="content">
-      <center>
-        <img src="alum-beach-day.jpg" style="width: auto; height: 600px;">
-      </center>
+
+
+
+    <!--homepage image slider with controls -->
+    <div class="carousel">
+      <button class="carousel-button carousel-button--left" style="width:5%; height:auto;">
+        <span>&#171;</span>
+      </button>
+        <div class="carousel-track-container">
+          <ul class="carousel-track">
+            <li class="carousel-slide">
+              <img class="carousel-image" src="img/sierra's-panoramic.jpg" style="width: 100%; height: auto;" alt="">
+            </li>
+            <li class="carousel-slide">
+              <img class="carousel-image" src="img/seb.jpg" style="width: 100%; height: auto;" alt="">
+            </li>
+            <li class="carousel-slide">
+              <img class="carousel-image" src="img/sanfrancisco.jpg" style="width: 100%; height: auto;" alt="">
+            </li>
+          </ul>
+        </div>
+
+      <button class="carousel-button carousel-button--right" style="width:5%; height:auto;">
+        <span>&#187;</span>
+      </button>
+
+      <div class="carousel-navigation">
+        <button class="carousel-indicator"></button>
+      </div>
     </div>
+
+
+
+
+
 
     <div class="about hidden">
       <center>
