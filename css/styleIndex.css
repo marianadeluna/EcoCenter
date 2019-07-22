@@ -68,7 +68,7 @@ h1{
 .carousel {
   position:relative;
   height:600px;
-  width:95%;
+  width:100%;
   margin: 0 auto;
 }
 
@@ -95,4 +95,24 @@ h1{
   top:0;
   bottom:0;
   width:100%;
+}
+
+.carousel-button {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color:white;
+  font-size: 150px;
+  opacity:0.7;
+}
+
+.carousel-button--right {
+  right: 40px;
+}
+
+.carousel-button--left {
+  left: 40px;
 }
