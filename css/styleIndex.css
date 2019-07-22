@@ -21,7 +21,7 @@ h1{
   margin: 0 auto;
   padding: 100px 0;
   transform-style: preserve-3d;
-  transform: perspective(800px);
+  transform: perspective(700px);
 }
 
 .about h1{
@@ -67,9 +67,9 @@ h1{
 /* Styling the carousel */
 .carousel {
   position:relative;
-  height:400px;
-  weight:80%;
-  margin:0 auto;
+  height:600px;
+  width:95%;
+  margin: 0 auto;
 }
 
 .carousel-image {
