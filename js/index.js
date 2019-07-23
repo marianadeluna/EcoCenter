@@ -20,6 +20,7 @@ slides.forEach(setSlidePosition);
 
 
 //click right, move slides to the right
+//listener not working
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
   console.log(currentSlide);
