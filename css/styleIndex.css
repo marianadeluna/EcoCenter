@@ -33,11 +33,11 @@ h1{
   transition: all 0.8s ease;
 }
 
-.about.hidden h1{
+.about.hidden h1 {
   opacity: 0;
   transform: translate3d(0, 0, 400px) rotateY(-40deg);
 }
-.about.hidden p{
+.about.hidden p {
   opacity: 0;
   transform: translate3d(0, 0, 400px) rotateY(40deg);
 }
@@ -115,4 +115,24 @@ h1{
 
 .carousel-button--left {
   left: 40px;
+}
+
+.carousel-navigation {
+  background: green;
+  display:flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.carousel-indicator {
+  border: 0;
+  border-radius: 50%;
+  width: 20px;
+  height:20px;
+  background:grey;
+  margin: 0 20px;
+}
+
+.carousel-indicator.current-slide {
+  background:black;
 }
