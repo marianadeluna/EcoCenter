@@ -24,11 +24,20 @@ const moveSlide = (target, currentSlide, targetSlide) => {
   targetSlide.classList.add('current-slide');
 }
 
+//function that updates color on navigation buttons
+const moveNav = (currentDot, targetDot) => {
+  currentDot.classList.remove('current-slide');
+  targetDot.classList.add('current-slide');
+}
+
 //click left, move slides to the left
 prevButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
   const prevSlide = currentSlide.previousElementSibling;
   moveSlide(track, currentSlide, prevSlide);
+  const currentDot = dotNav.querySelector('.current-slide');
+  const prevDot = currentDot.previousElementSibling;
+  moveNav(currentDot, prevDot);
 });
 
 //click right, move slides to the right
@@ -36,6 +45,9 @@ nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
   moveSlide(track, currentSlide, nextSlide);
+  const currentDot = dotNav.querySelector('.current-slide');
+  const nextDot = currentDot.nextElementSibling;
+  moveNav(currentDot, nextDot);
 });
 
 //click navigation indicators, move to that slide
@@ -48,7 +60,7 @@ dotNav.addEventListener('click', e => {
   const targetIndex = dots.findIndex(dot => dot === targetDot)
   const targetSlide = slides[targetIndex];
   moveSlide(track, currentSlide, targetSlide);
-
+  moveNav(currentDot, targetDot);
 });
 //
 //
