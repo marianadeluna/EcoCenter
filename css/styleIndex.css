@@ -82,6 +82,7 @@ h1{
   background-color: #4B8B3B;
   height:100%;  /* height of .carousel */
   position: relative;
+  overflow: hidden;
 }
 
 .carousel-track {
@@ -139,4 +140,8 @@ h1{
 
 .carousel-indicator.current-slide {
   background:black;
+}
+
+.is-hidden {
+  display: none;
 }
