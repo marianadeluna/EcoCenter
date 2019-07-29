@@ -40,8 +40,14 @@ nextButton.addEventListener('click', e => {
 
 //click navigation indicators, move to that slide
 dotNav.addEventListener('click', e => {
-
-
+  //need to find which dot was clicked
+  const targetDot = e.target.closest('button');
+  if (!targetDot) return;
+  const currentSlide = track.querySelector('.current-slide');
+  const currentDot = dotNav.querySelector('.current-slide');
+  const targetIndex = dots.findIndex(dot => dot === targetDot)
+  const targetSlide = slides[targetIndex];
+  moveSlide(track, currentSlide, targetSlide);
 
 });
 //

@@ -18,7 +18,7 @@ h1{
 
 .about{
   max-width: 600px;
-  margin: 0 auto;
+  margin: 100px auto;
   padding: 100px 0;
   transform-style: preserve-3d;
   transform: perspective(700px);
@@ -134,6 +134,7 @@ h1{
   height:20px;
   background:grey;
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .carousel-indicator.current-slide {
