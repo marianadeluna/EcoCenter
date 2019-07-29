@@ -9,6 +9,7 @@ const dotNav = document.querySelector('.carousel-navigation');
 const dots = Array.from(dotNav.children);
 const slideWidth = slides[0].getBoundingClientRect().width;
 
+
 //arrange the slides next to eachother
 const setSlidePosition = (slide,index) => {
   slide.style.left = slideWidth * index + 'px';
@@ -21,6 +22,8 @@ slides.forEach(setSlidePosition);
 
 //click right, move slides to the right
 //listener not working
+
+
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
   console.log(currentSlide);
@@ -28,6 +31,6 @@ nextButton.addEventListener('click', e => {
 
   //move slide
 
-});
+})
 
 //click navigation indicators, move to that slide
