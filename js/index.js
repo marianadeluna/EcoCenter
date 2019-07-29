@@ -26,11 +26,21 @@ slides.forEach(setSlidePosition);
 
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
-  console.log(currentSlide);
-  console.log('nextButton');
+  const nextSlide = currentSlide.nextElementSibling;
+  const amountToMove = nextSlide.style.left;
+  console.log(amountToMove);
 
-  //move slide
-
+  //move to next slide
+  track.style.transform = 'translateX(-' + amountToMove + ')';
+  currentSlide.classList.remove('current-slide');
+  nextSlide.classList.add('current-slide');
 })
 
 //click navigation indicators, move to that slide
+//
+//
+//
+//
+//
+//
+//
