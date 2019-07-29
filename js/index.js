@@ -17,26 +17,38 @@ const setSlidePosition = (slide,index) => {
 
 slides.forEach(setSlidePosition);
 
-//click left, move slides to the left
+//function that moves slides to left and right
+const moveSlide = (target, currentSlide, targetSlide) => {
+  track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+  currentSlide.classList.remove('current-slide');
+  targetSlide.classList.add('current-slide');
+}
 
+//click left, move slides to the left
+prevButton.addEventListener('click', e => {
+  const currentSlide = track.querySelector('.current-slide');
+  const prevSlide = currentSlide.previousElementSibling;
+  moveSlide(track, currentSlide, prevSlide);
+});
 
 //click right, move slides to the right
-//listener not working
-
-
 nextButton.addEventListener('click', e => {
   const currentSlide = track.querySelector('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
-  const amountToMove = nextSlide.style.left;
-  console.log(amountToMove);
-
-  //move to next slide
-  track.style.transform = 'translateX(-' + amountToMove + ')';
-  currentSlide.classList.remove('current-slide');
-  nextSlide.classList.add('current-slide');
-})
+  moveSlide(track, currentSlide, nextSlide);
+});
 
 //click navigation indicators, move to that slide
+dotNav.addEventListener('click', e => {
+
+
+
+});
+//
+//
+//
+//
+//
 //
 //
 //
