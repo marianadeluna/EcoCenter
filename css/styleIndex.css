@@ -22,17 +22,14 @@ h1{
   transform: perspective(700px);
 }
 
-.about h1{
-  font-weight: 30;
-  font-size: 40px;
-}
-
 .subtitle {
   height: 30px;
   border-bottom: solid 1px #000;
   width: 90%;
   text-align: center;
   margin: 2em 0;
+  font-weight: 30;
+  font-size: 40px;
 }
 
 .subtitle span {
