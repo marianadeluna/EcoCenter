@@ -64,19 +64,21 @@ h1{
 
 /* Style the top tabs */
 .tab {
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 /* Style the tab buttons tab */
 .tab button {
   background-color: #84863b;
-  float: center;
+  color: white;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 17px;
   transition: 0.3s;
   font-size: 17px;
+  margin: 0 2px;
 }
 
 /* Change background color of buttons on hover */
@@ -159,9 +161,28 @@ h1{
 }
 
 .carousel-indicator.current-slide {
-  background:black;
+  background: black;
 }
 
 .is-hidden {
   display: none;
+}
+
+.foot {
+  width:100%;
+  background-color: #84863b;
+  color: white;
+}
+
+.foot button {
+  color: white;
+  background-color: #84863b;
+  border: 0;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.foot button, h1{
+  margin: 10px 20px;
 }
