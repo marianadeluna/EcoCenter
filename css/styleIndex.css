@@ -16,25 +16,7 @@ h1{
   background-color: #84863b;
 }
 
-.subtitle {
-  height: 30px;
-  border-bottom: solid 3px #c0bb4e;
-  width: 90%;
-  text-align: center;
-  margin: 2em 0;
-  font-weight: 30;
-  font-size: 40px;
-  color: #84863b;
-}
-
-.subtitle span {
-  background: #fff;
-  position: relative;
-  top: 0;
-  padding: 0 20px 0 20px;
-  line-height:30px;
-}
-
+/*Styling the sections with title to have hidden/not hidden effects */
 .about{
   margin-top: 150px;
   transform-style: preserve-3d;
@@ -58,6 +40,26 @@ h1{
 .about.hidden p {
   opacity: 0;
   transform: translate3d(0, 0, 400px) rotateY(40deg);
+}
+
+/*Styling the subtitle with line going through */
+.subtitle {
+  height: 30px;
+  border-bottom: solid 3px #c0bb4e;
+  width: 90%;
+  text-align: center;
+  margin: 2em 0;
+  font-weight: 30;
+  font-size: 40px;
+  color: #84863b;
+}
+
+.subtitle span {
+  background: #fff;
+  position: relative;
+  top: 0;
+  padding: 0 20px 0 20px;
+  line-height:30px;
 }
 
 /* Style the top tabs */
@@ -192,18 +194,21 @@ h1{
   list-style: none;
   margin:0 10px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .product-list img{
   justify-content: center;
-  width: 250px;
-  height: 250px;
-  padding: 0 20px;
+  width: 300px;
+  height: 300px;
+  padding: 0 50px;
   cursor: pointer;
 }
 
 .product-list p {
-  margin:0 20px;
-  max-width: 250px;
+  font-size: 20px;
   text-align: center;
+  word-wrap: break-word;
+  max-width: 300px;
+  margin: 0 50px;
 }
