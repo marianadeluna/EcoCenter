@@ -16,12 +16,6 @@ h1{
   background-color: #84863b;
 }
 
-.about{
-  padding-top: 75px;
-  transform-style: preserve-3d;
-  transform: perspective(700px);
-}
-
 .subtitle {
   height: 30px;
   border-bottom: solid 3px #c0bb4e;
@@ -39,6 +33,12 @@ h1{
   top: 0;
   padding: 0 20px 0 20px;
   line-height:30px;
+}
+
+.about{
+  margin-top: 150px;
+  transform-style: preserve-3d;
+  transform: perspective(700px);
 }
 
 .about h2{
@@ -192,7 +192,6 @@ h1{
   list-style: none;
   margin:0 10px;
   justify-content: center;
-
 }
 
 .product-list img{
