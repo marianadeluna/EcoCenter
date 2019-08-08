@@ -17,19 +17,20 @@ h1{
 }
 
 .about{
-  margin: 150px auto;
+  padding-top: 75px;
   transform-style: preserve-3d;
   transform: perspective(700px);
 }
 
 .subtitle {
   height: 30px;
-  border-bottom: solid 1px #000;
+  border-bottom: solid 3px #c0bb4e;
   width: 90%;
   text-align: center;
   margin: 2em 0;
   font-weight: 30;
   font-size: 40px;
+  color: #84863b;
 }
 
 .subtitle span {
@@ -165,6 +166,7 @@ h1{
   display: none;
 }
 
+/*footer styles*/
 .foot {
   width:100%;
   background-color: #84863b;
@@ -182,4 +184,27 @@ h1{
 
 .foot button, h1{
   margin: 10px 20px;
+}
+
+/* recommended products style*/
+.product-list{
+  display: flex;
+  list-style: none;
+  margin:0 10px;
+  justify-content: center;
+
+}
+
+.product-list img{
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.product-list p {
+  margin:0 20px;
+  max-width: 250px;
+  text-align: center;
 }
